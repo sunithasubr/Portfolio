@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunitha Subramani | Enterprise AI Delivery & Customer Success Leader</title>
+  <meta name="description" content="Executive Portfolio of Sunitha Subramani - Senior Manager & Director in Enterprise AI Delivery, Multi-Agent Workflows, and Customer Success Engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #070a12;
+      --bg-surface: #0e1424;
+      --bg-card: rgba(16, 24, 44, 0.75);
+      --bg-card-hover: rgba(24, 36, 66, 0.9);
+      --accent-cyan: #00f2fe;
+      --accent-blue: #4facfe;
+      --accent-purple: #8a2be2;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(0, 242, 254, 0.3);
+      --glow-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #8a2be2 100%);
+      --emerald-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 10%, rgba(0, 242, 254, 0.07) 0%, transparent 40%),
+        radial-gradient(circle at 90% 20%, rgba(138, 43, 226, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 50% 65%, rgba(79, 172, 254, 0.05) 0%, transparent 55%);
+      background-attachment: fixed;
+    }
+
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: blur(20px);
+      background: rgba(7, 10, 18, 0.85);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--glow-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      color: #040914;
+      font-size: 1.1rem;
+      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    }
+
+    .logo-text {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-subtitle {
+      font-size: 0.72rem;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-cyan);
+    }
+
+    .nav-cta {
+      background: var(--glow-gradient);
+      color: #040914;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(0, 242, 254, 0.55);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 160px 0 80px;
+      position: relative;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 242, 254, 0.08);
+      border: 1px solid rgba(0, 242, 254, 0.25);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px var(--accent-cyan);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+      line-height: 1.12;
+      margin-bottom: 24px;
+      max-width: 980px;
+    }
+
+    .gradient-text {
+      background: var(--glow-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 850px;
+      margin-bottom: 36px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--glow-gradient);
+      color: #040914;
+      box-shadow: 0 8px 24px rgba(0, 242, 254, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0, 242, 254, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+      border: 1px solid var(--border-glass);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Industry Badges */
+    .domain-strip {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 16px 20px;
+      background: rgba(14, 20, 36, 0.6);
+      border: 1px solid var(--border-glass);
+      border-radius: 14px;
+      margin-bottom: 50px;
+    }
+
+    .domain-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .domain-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .metric-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 18px;
+      padding: 24px;
+      backdrop-filter: blur(14px);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--glow-gradient);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .metric-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-glow);
+      background: var(--bg-card-hover);
+    }
+
+    .metric-card:hover::before {
+      opacity: 1;
+    }
+
+    .metric-number {
+      font-size: 2.3rem;
+      font-weight: 800;
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.1;
+      margin-bottom: 6px;
+      background: var(--glow-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .metric-title {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* Sections */
+    section {
+      padding: 90px 0;
+      border-top: 1px solid var(--border-glass);
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+    }
+
+    .section-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+      margin-bottom: 12px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      max-width: 680px;
+      font-size: 1.05rem;
+    }
+
+    /* Executive Value Pillars (Why Hire Me) */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 18px;
+      padding: 28px;
+      transition: all 0.3s;
+    }
+
+    .pillar-card:hover {
+      border-color: rgba(0, 242, 254, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .pillar-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(0, 242, 254, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      color: var(--accent-cyan);
+    }
+
+    .pillar-title {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .pillar-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Enterprise AI Playbook (Delivery Lifecycle) */
+    .playbook-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .playbook-step {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 16px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .step-number {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      background: rgba(0, 242, 254, 0.1);
+      padding: 2px 8px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .step-title {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Case Studies */
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
+    }
+
+    .case-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 20px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .case-card:hover {
+      border-color: rgba(0, 242, 254, 0.45);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .case-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .case-heading {
+      font-size: 1.35rem;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .case-body {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .case-list {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .case-list li {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .case-list li::before {
+      content: '✓';
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+
+    .case-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: 'Fira Code', monospace;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 18px;
+      padding: 28px;
+      transition: all 0.3s;
+    }
+
+    .skill-card:hover {
+      border-color: var(--border-glow);
+      background: var(--bg-card-hover);
+    }
+
+    .skill-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .skill-icon-small {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(0, 242, 254, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .skill-title {
+      font-size: 1.15rem;
+    }
+
+    .skill-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .skill-items li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-items li::before {
+      content: '•';
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+
+    /* Timeline */
+    .timeline-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .timeline-wrap::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .t-item {
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 50px;
+    }
+
+    .t-dot {
+      position: absolute;
+      left: 12px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--bg-dark);
+      border: 3px solid var(--accent-cyan);
+      box-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
+    }
+
+    .t-date {
+      font-size: 0.8rem;
+      color: var(--accent-cyan);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .t-role {
+      font-size: 1.35rem;
+      margin-bottom: 4px;
+    }
+
+    .t-company {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .t-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    /* Insights Grid */
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .insight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 18px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s;
+    }
+
+    .insight-card:hover {
+      border-color: rgba(138, 43, 226, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .insight-category {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent-purple);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .insight-title {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .insight-quote {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-style: italic;
+      border-left: 2px solid var(--accent-purple);
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* CTA Box */
+    .cta-banner {
+      background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.14) 0%, rgba(14, 20, 36, 0.9) 100%);
+      border: 1px solid var(--border-glow);
+      border-radius: 28px;
+      padding: 64px 36px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .cta-heading {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 16px;
+    }
+
+    .cta-text {
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 36px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-glass);
+      padding: 36px 0;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero-title { font-size: 2.2rem; }
+      .case-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#about" class="logo-badge">
+        <div class="logo-avatar">S</div>
+        <div>
+          <div class="logo-text">Sunitha Subramani</div>
+          <div class="logo-subtitle">Enterprise AI & CS Leader</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#why-me">Why Hire Me</a></li>
+        <li><a href="#playbook">AI Playbook</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#skills">Competencies</a></li>
+        <li><a href="#experience">Career Path</a></li>
+        <li><a href="#insights">Insights</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Connect with Me</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        Available for Executive AI Delivery & Customer Success Roles
+      </div>
+      
+      <h1 class="hero-title">
+        Bridging Enterprise AI Technology with <span class="gradient-text">Measurable Customer Outcomes</span>
+      </h1>
+      
+      <p class="hero-lead">
+        Senior Manager & Enterprise AI Delivery Leader with <strong>20+ years of experience</strong> leading multi-agent workflows, Conversational AI platforms, and Customer Success Engineering for Fortune 500 organizations across Banking, Retail, Healthcare, and IT.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#case-studies" class="btn btn-primary">Explore Enterprise Case Studies →</a>
+        <a href="#playbook" class="btn btn-secondary">View AI Delivery Playbook</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+
+      <!-- Domain Badges -->
+      <div class="domain-strip">
+        <span class="domain-label">Domain Authority:</span>
+        <div class="domain-pill">🏛️ Banking & Fintech</div>
+        <div class="domain-pill">🛍️ Retail & E-Commerce</div>
+        <div class="domain-pill">💡 High-Tech & IoT</div>
+        <div class="domain-pill">🏥 Healthcare</div>
+        <div class="domain-pill">✈️ Travel & Logistics</div>
+        <div class="domain-pill">👥 Enterprise HR/HCM</div>
+      </div>
+
+      <!-- Key Impact Metrics Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">$1.8M</div>
+          <div class="metric-title">At-Risk ARR Protected via Executive Turnaround</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">25%</div>
+          <div class="metric-title">Reduction in Enterprise Time-to-Value (TTV)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">20+ <span style="font-size:1.1rem;color:var(--text-muted);">Yrs</span></div>
+          <div class="metric-title">Enterprise Delivery, QE & Customer Success Leadership</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">7 <span style="font-size:1.1rem;color:var(--text-muted);">F500</span></div>
+          <div class="metric-title">Strategic Enterprise Accounts Governed Simultaneously</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">90%</div>
+          <div class="metric-title">Manual Test Design Effort Saved with AI-Native Tooling</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Executive Value: Why Hire Me -->
+  <section id="why-me">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Executive Value Proposition</div>
+        <h2 class="section-title">What I Bring to Your Organization</h2>
+        <p class="section-desc">Four core leadership pillars that solve the gap between AI procurement and actual bottom-line enterprise value.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">🎯</div>
+          <h3 class="pillar-title">Proven $500K+ Account Governance</h3>
+          <p class="pillar-text">
+            Extensive experience steering executive steering committees, Statement of Work (SOW) compliance, change order negotiations, and quarterly business reviews for Fortune 500 accounts.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">🛡️</div>
+          <h3 class="pillar-title">High-Stakes Turnaround & Recovery</h3>
+          <p class="pillar-text">
+            Specialized in turning around at-risk customer implementations. Diagnosed intent misclassification and model accuracy crises, accelerated delayed timelines by 6 weeks, and safeguarded $1.8M in ARR.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">⚙️</div>
+          <h3 class="pillar-title">Production-Grade AI & HITL Guardrails</h3>
+          <p class="pillar-text">
+            Moving beyond simple prompts to deterministic state machines, automated LLM benchmarking (GPT-4, Claude, Mistral), hallucination detection, and Human-in-the-Loop escalation frameworks.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">🌐</div>
+          <h3 class="pillar-title">Global Cross-Timezone Squad Leadership</h3>
+          <p class="pillar-text">
+            Directly led delivery squads of 15+ and coordinated cross-functional teams of 30+ across US, Europe, and India spanning Product, NLP, QA, DevOps, and Customer Success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proprietary Enterprise AI Delivery Playbook -->
+  <section id="playbook">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Methodology</div>
+        <h2 class="section-title">The Enterprise AI Delivery Playbook</h2>
+        <p class="section-desc">My repeatable 5-stage framework for taking complex enterprise AI initiatives from initial discovery to high-adoption production scale.</p>
+      </div>
+
+      <div class="playbook-container">
+        <div class="playbook-step">
+          <div class="step-number">PHASE 01</div>
+          <h3 class="step-title">Discovery & Exception Mapping</h3>
+          <p class="step-desc">Mapping tacit unwritten exceptions, system integration points (ERP/CRM), and establishing quantitative baseline KPIs.</p>
+        </div>
+
+        <div class="playbook-step">
+          <div class="step-number">PHASE 02</div>
+          <h3 class="step-title">Solution Design & State Graph</h3>
+          <p class="step-desc">Architecting hybrid deterministic state machines, fallback paths, PII masking, and RAG knowledge retrieval layers.</p>
+        </div>
+
+        <div class="playbook-step">
+          <div class="step-number">PHASE 03</div>
+          <h3 class="step-title">Model Tuning & LLMOps Evals</h3>
+          <p class="step-desc">Optimizing confidence thresholds, few-shot embeddings, and running automated regression suites against golden datasets.</p>
+        </div>
+
+        <div class="playbook-step">
+          <div class="step-number">PHASE 04</div>
+          <h3 class="step-title">Production Rollout & HITL</h3>
+          <p class="step-desc">Governed deployment with confidence-scored Human-in-the-Loop routing and real-time observability telemetry.</p>
+        </div>
+
+        <div class="playbook-step">
+          <div class="step-number">PHASE 05</div>
+          <h3 class="step-title">Hypercare & Feedback Loops</h3>
+          <p class="step-desc">Feeding human overrides back into the context layer, tracking Time-to-Value (TTV), and ensuring customer adoption.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Studies -->
+  <section id="case-studies">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Enterprise Case Studies</div>
+        <h2 class="section-title">Proven Delivery in Action</h2>
+        <p class="section-desc">Deep dives into high-stakes customer implementations and platform-level AI transformations.</p>
+      </div>
+
+      <div class="case-grid">
+        
+        <!-- Case Study 1 -->
+        <div class="case-card">
+          <div>
+            <div class="case-badge">🏛️ Banking & Financial Services</div>
+            <h3 class="case-heading">Tier-1 Global Banking Conversational AI Transformation ($500K)</h3>
+            <p class="case-body">
+              Led the end-to-end customer implementation of an enterprise Conversational AI ecosystem on the Kore.ai platform for a Tier-1 multinational bank, handling high-volume consumer transactions and multilingual support.
+            </p>
+            <ul class="case-list">
+              <li>Architected discovery workshops, solution design, and production rollout.</li>
+              <li>Engineered multilingual NLP models across English, Arabic, Spanish, and French.</li>
+              <li>Enforced strict compliance, PII masking, and Human-in-the-Loop auditability.</li>
+            </ul>
+          </div>
+          <div class="case-tags">
+            <span class="tag">Kore.ai XO</span>
+            <span class="tag">Multilingual NLP</span>
+            <span class="tag">Banking Core API</span>
+            <span class="tag">HITL Governance</span>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="case-card">
+          <div>
+            <div class="case-badge">🛡️ Executive Turnaround & Retention</div>
+            <h3 class="case-heading">High-Stakes Customer Recovery & ARR Protection ($1.8M)</h3>
+            <p class="case-body">
+              Stepped into a critical enterprise customer facing severe model accuracy degradation, hallucination risks, and delayed deployment schedules to rebuild trust and drive production readiness.
+            </p>
+            <ul class="case-list">
+              <li>Identified root cause for intent misclassification and entity extraction failures.</li>
+              <li>Rebuilt stakeholder confidence and accelerated delayed go-live by 6 weeks.</li>
+              <li>Successfully protected $1.8M in at-risk ARR through structured hypercare.</li>
+            </ul>
+          </div>
+          <div class="case-tags">
+            <span class="tag">Executive Recovery</span>
+            <span class="tag">Root-Cause Analysis</span>
+            <span class="tag">Model Tuning</span>
+            <span class="tag">ARR Protection</span>
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="case-card">
+          <div>
+            <div class="case-badge">💡 Global Hardware / IoT Enterprise</div>
+            <h3 class="case-heading">Global Lighting Technology Company Implementation ($500K)</h3>
+            <p class="case-body">
+              Managed the omnichannel customer success engineering and implementation for a global lighting manufacturing leader, connecting B2B customer support with backend ERP and supply chain pipelines.
+            </p>
+            <ul class="case-list">
+              <li>Integrated real-time order tracking, warranty lookup, and technical triage.</li>
+              <li>Coordinated cross-functional teams across US, India, and European stakeholders.</li>
+              <li>Achieved 99.4% SLA adherence and 35% reduction in first-response times.</li>
+            </ul>
+          </div>
+          <div class="case-tags">
+            <span class="tag">Enterprise B2B</span>
+            <span class="tag">ERP Integration</span>
+            <span class="tag">SLA Governance</span>
+            <span class="tag">Customer Onboarding</span>
+          </div>
+        </div>
+
+        <!-- Case Study 4 -->
+        <div class="case-card">
+          <div>
+            <div class="case-badge">⚙️ AI Transformation & LLMOps</div>
+            <h3 class="case-heading">AI-Native Engineering & LLM Evaluation Framework</h3>
+            <p class="case-body">
+              Pioneered internal engineering transformation by establishing LLM evaluation benchmarks (GPT-4, Claude Sonnet, Mistral) and introducing AI-assisted development tools (Cursor AI, MCP, Jira Intelligence).
+            </p>
+            <ul class="case-list">
+              <li>Reduced manual test design effort by 90% and automation dev by 60%.</li>
+              <li>Built automated golden datasets for groundedness and hallucination detection.</li>
+              <li>Authored enterprise guidelines for responsible multi-agent orchestration.</li>
+            </ul>
+          </div>
+          <div class="case-tags">
+            <span class="tag">Cursor AI / MCP</span>
+            <span class="tag">LLM Benchmarking</span>
+            <span class="tag">Test Automation</span>
+            <span class="tag">CI/CD Pipelines</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Competencies Matrix -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Competencies</div>
+        <h2 class="section-title">Skills & Leadership Architecture</h2>
+        <p class="section-desc">A multidisciplinary skillset combining executive customer management, rigorous quality governance, and modern AI engineering.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-head">
+            <div class="skill-icon-small">🤖</div>
+            <h3 class="skill-title">Enterprise AI & GenAI</h3>
+          </div>
+          <ul class="skill-items">
+            <li>Conversational AI (Kore.ai XO)</li>
+            <li>Agentic Workflows & Multi-Agent State Machines</li>
+            <li>LLM Evaluation & Benchmarking (GPT-4, Claude)</li>
+            <li>RAG Architecture & Vector Retrieval</li>
+            <li>Human-in-the-Loop (HITL) Validation</li>
+            <li>Prompt Engineering & Guardrails</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <div class="skill-icon-small">💼</div>
+            <h3 class="skill-title">Customer Success & Delivery</h3>
+          </div>
+          <ul class="skill-items">
+            <li>Enterprise Discovery & Solution Architecture</li>
+            <li>Executive Steering Committees & QBRs</li>
+            <li>Customer Recovery & ARR Retention</li>
+            <li>Time-to-Value (TTV) Optimization</li>
+            <li>Hypercare & User Adoption Strategy</li>
+            <li>Multi-Account Portfolio Governance</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <div class="skill-icon-small">🛡️</div>
+            <h3 class="skill-title">Quality & Release Governance</h3>
+          </div>
+          <ul class="skill-items">
+            <li>SOW Compliance & Acceptance Criteria</li>
+            <li>Release Management & CI/CD Governance</li>
+            <li>Automated Testing (Selenium, Playwright)</li>
+            <li>Schema Validation & PII Compliance</li>
+            <li>Latency, Cost & Hallucination Auditing</li>
+            <li>Vendor & Language Annotation Governance</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <div class="skill-icon-small">🌐</div>
+            <h3 class="skill-title">Enterprise Systems & Data</h3>
+          </div>
+          <ul class="skill-items">
+            <li>Oracle E-Business Suite (EBS) & Fusion HCM</li>
+            <li>REST API Integrations & Webhooks (JSON/XML)</li>
+            <li>MongoDB & SQL Database Querying</li>
+            <li>ERP & CRM Data Reconciliation (SAP, Salesforce)</li>
+            <li>AI-Native Tooling (Cursor, MCP, Jira Intelligence)</li>
+            <li>Cross-Timezone Global Team Leadership</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Trajectory -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Career Milestones</div>
+        <h2 class="section-title">Leadership Journey & Evolution</h2>
+        <p class="section-desc">Over two decades of continuous growth—from Quality Engineering lead to Senior Manager of Enterprise AI Delivery.</p>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-date">Oct 2015 – May 2026</div>
+          <h3 class="t-role">Senior Manager – Enterprise AI Delivery</h3>
+          <div class="t-company">Kore.ai • (Promoted through Lead, Senior Lead, APM, Manager, to Senior Manager)</div>
+          <p class="t-desc">
+            Served as executive delivery lead for 7 strategic enterprise accounts across Banking, Retail, Healthcare, and Travel. Led delivery teams of 15+ and coordinated cross-functional squads of 30+ across Product, NLP, QA, and Customer Success. Protected $1.8M at-risk ARR, reduced TTV by 25%, and established global AI evaluation and release standards.
+          </p>
+          <div class="case-tags">
+            <span class="tag">Kore.ai Platform</span>
+            <span class="tag">Enterprise AI Delivery</span>
+            <span class="tag">Executive Recovery</span>
+            <span class="tag">Multilingual NLP</span>
+            <span class="tag">Team Leadership</span>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-date">Nov 2013 – Oct 2015</div>
+          <h3 class="t-role">Lead – QA & Delivery</h3>
+          <div class="t-company">Sunera Technologies</div>
+          <p class="t-desc">
+            Led Oracle Fusion HCM and Oracle E-Business Suite implementation programs. Managed customer discovery workshops, POC demonstrations, integration planning, and onsite implementation in the United States. Awarded the <em>Star of the SBU Award</em> for outstanding customer relationship management.
+          </p>
+          <div class="case-tags">
+            <span class="tag">Oracle Fusion HCM</span>
+            <span class="tag">Oracle EBS</span>
+            <span class="tag">Customer Implementation</span>
+            <span class="tag">Onsite US Delivery</span>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-date">Foundational Years</div>
+          <h3 class="t-role">Quality Engineering & Software Delivery Specialist</h3>
+          <div class="t-company">Enterprise IT & Systems Consulting</div>
+          <p class="t-desc">
+            Built foundational rigor in software testing, automated test harness creation, database validation (SQL), requirement traceability, and cross-functional Agile/Scrum delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thought Leadership / Published Articles -->
+  <section id="insights">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Publications & Thought Leadership</div>
+        <h2 class="section-title">Published Articles & Engineering Playbooks</h2>
+        <p class="section-desc">Technical publications and strategic perspectives on Generative AI testing, Agentic AI delivery, LLM observability, and enterprise adoption.</p>
+      </div>
+
+      <div class="insights-grid">
+        
+        <!-- Article 1 -->
+        <div class="insight-card">
+          <div>
+            <div class="insight-category" style="display:flex; justify-content:space-between; align-items:center;">
+              <span>AI Adoption & Trust</span>
+              <span class="tag" style="color:var(--accent-cyan); border-color:rgba(0,242,254,0.3);">Medium | LinkedIn</span>
+            </div>
+            <h3 class="insight-title">AI Acceleration vs. Customer Adoption: Bridging the Enterprise Trust Gap</h3>
+            <p class="insight-quote" style="border-left-color: var(--accent-cyan);">
+              Explores the critical relationship between rapid enterprise AI advancement, stakeholder confidence, customer trust, and long-term business adoption.
+            </p>
+          </div>
+          <a href="https://medium.com/@sunitha.s01/ai-acceleration-vs-customer-adoption-bridging-the-enterprise-trust-gap-a7c75fe3882e/share/sunitha.s01?source=social.linkedin&_nonce=TxWP13oj" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem; width: fit-content; margin-top: 12px; border-color: rgba(0,242,254,0.3); color: var(--accent-cyan);">
+            Read on Medium ↗
+          </a>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="insight-card">
+          <div>
+            <div class="insight-category" style="display:flex; justify-content:space-between; align-items:center;">
+              <span>GenAI Quality & Testing</span>
+              <span class="tag" style="color:#10b981; border-color:rgba(16,185,129,0.3);">Kore.ai Official Blog</span>
+            </div>
+            <h3 class="insight-title">The GenAI Testing Playbook: Best Practices for AI-Driven Testing & Deployment</h3>
+            <p class="insight-quote" style="border-left-color: #10b981;">
+              A comprehensive technical framework covering validation methodologies, quality benchmarks, and deployment guardrails for Generative AI solutions.
+            </p>
+          </div>
+          <a href="https://blog.kore.ai/the-genai-testing-playbook-best-practices-for-ai-driven-testing-deployment" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem; width: fit-content; margin-top: 12px; border-color: rgba(16,185,129,0.3); color: #10b981;">
+            Read on Kore.ai ↗
+          </a>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="insight-card">
+          <div>
+            <div class="insight-category" style="display:flex; justify-content:space-between; align-items:center;">
+              <span>Conversational AI Quality</span>
+              <span class="tag" style="color:#10b981; border-color:rgba(16,185,129,0.3);">Kore.ai Official Blog</span>
+            </div>
+            <h3 class="insight-title">Mastering Chatbot Testing: Ensuring Production-Grade Conversational Quality</h3>
+            <p class="insight-quote" style="border-left-color: #10b981;">
+              In-depth guide on intent recognition tuning, entity extraction validation, dialog traversal, and conversational AI quality engineering.
+            </p>
+          </div>
+          <a href="https://blog.kore.ai/mastering-chatbot-testing" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem; width: fit-content; margin-top: 12px; border-color: rgba(16,185,129,0.3); color: #10b981;">
+            Read on Kore.ai ↗
+          </a>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="insight-card">
+          <div>
+            <div class="insight-category" style="display:flex; justify-content:space-between; align-items:center;">
+              <span>Agentic AI & Delivery</span>
+              <span class="tag" style="color:var(--accent-purple); border-color:rgba(138,43,226,0.3);">Medium | LinkedIn</span>
+            </div>
+            <h3 class="insight-title">Rethinking Software Delivery in the Age of Agentic AI</h3>
+            <p class="insight-quote" style="border-left-color: var(--accent-purple);">
+              Architectural perspective on how autonomous agentic workflows and AI-native engineering are transforming enterprise software delivery velocity.
+            </p>
+          </div>
+          <a href="https://medium.com/@sunitha.s01/rethinking-software-delivery-in-the-age-of-agentic-ai-a47fb6d1488d" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem; width: fit-content; margin-top: 12px; border-color: rgba(138,43,226,0.3); color: #c084fc;">
+            Read on Medium ↗
+          </a>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="insight-card">
+          <div>
+            <div class="insight-category" style="display:flex; justify-content:space-between; align-items:center;">
+              <span>Observability & Governance</span>
+              <span class="tag" style="color:var(--accent-purple); border-color:rgba(138,43,226,0.3);">Medium | LinkedIn</span>
+            </div>
+            <h3 class="insight-title">Beyond Building Agents: Why Observability and Governance Matter</h3>
+            <p class="insight-quote" style="border-left-color: var(--accent-purple);">
+              Strategic breakdown of operational guardrails, telemetry, latency analysis, and enterprise governance required for resilient Agentic AI.
+            </p>
+          </div>
+          <a href="https://medium.com/p/beyond-building-agents-why-observability-and-governance-matter-8c84de29c971?source=social.linkedin&_nonce=13a2xtwj" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem; width: fit-content; margin-top: 12px; border-color: rgba(138,43,226,0.3); color: #c084fc;">
+            Read on Medium ↗
+          </a>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="insight-card">
+          <div>
+            <div class="insight-category" style="display:flex; justify-content:space-between; align-items:center;">
+              <span>LLM Benchmarking & Evals</span>
+              <span class="tag" style="color:var(--accent-purple); border-color:rgba(138,43,226,0.3);">Medium | LinkedIn</span>
+            </div>
+            <h3 class="insight-title">Demystifying Evals: Building Production-Ready Agentic AI</h3>
+            <p class="insight-quote" style="border-left-color: var(--accent-purple);">
+              Hands-on framework for evaluation pipelines, golden datasets, groundedness scoring, and hallucination prevention for production LLM systems.
+            </p>
+          </div>
+          <a href="https://medium.com/p/29dd91d0fad5?postPublishedType=initial" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem; width: fit-content; margin-top: 12px; border-color: rgba(138,43,226,0.3); color: #c084fc;">
+            Read on Medium ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 class="cta-heading">Let’s Build Predictable, High-Impact AI Success</h2>
+        <p class="cta-text">
+          Whether you need an executive leader to steer multi-million dollar AI implementations, scale Customer Success Engineering, or establish production-grade AI governance—let's connect.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://www.linkedin.com" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+          <a href="mailto:contact@example.com" class="btn btn-secondary">Send an Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Sunitha Subramani. All rights reserved. • Enterprise AI Delivery & Customer Success Engineering Leader</p>
+    </div>
+  </footer>
+
+</body>
+</html>
